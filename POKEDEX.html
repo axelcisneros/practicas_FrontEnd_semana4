@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href="./pokedex.css">
+    
+</head>
+<body>
+    <header>
+         <h1><img src="./img/pokedeex.png" alt="logo" width="200px"></h1>
+         <p>LaunchX</p>
+    </header>
+    <section>
+        <h2>Vamos a buscar al Pokemon</h2>
+        <input class="bus" type="text" placeholder="pikachu" id="pokeName" name="pokeName"><br>
+        <img class="pokemon" src="./img/pokeball.png" alt="Pokemon" id="pokeImg" width="100px">
+        <img class="shiny" src="./img/pokeball.png" alt="Pokemon2" id="pokeImg2" width="100px"> 
+        <img class="poke" src="./img/pokedeex1.png" alt="pokedeex" width="180px"><br>
+        <button class="bot" onclick="fetchPokemon(), fetchtab()"></button><br>
+        <input class="typ" type="text"id="typ" name="type" readonly value="">
+        <input class="typ2" type="text" id="typ2" name="type2" readonly value="">
+        <input class="nme1" type="text" id="nme" name="nme" readonly value="">
+        <!--<div>
+            <h3>Estadisticas Base</h3>
+            <p id="datos"></p>
+        </div>-->
+    </section>
+</body>
+<footer>
+    <script src="./POKEDEX.js"></script>
+</footer>
+</html>
