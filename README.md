@@ -1,1 +1,1 @@
-# practicas_FrontEnd_semana4
+link pagina https://axelcisneros.github.io/pokedex.github.io/
