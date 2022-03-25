@@ -19,14 +19,20 @@
         <img class="pokemon" src="./img/pokeball.png" alt="Pokemon" id="pokeImg" width="100px">
         <img class="shiny" src="./img/pokeball.png" alt="Pokemon2" id="pokeImg2" width="100px"> 
         <img class="poke" src="./img/pokedeex1.png" alt="pokedeex" width="180px"><br>
-        <button class="bot" onclick="fetchPokemon(), fetchtab()"></button><br>
+        <button class="bot" onclick="fetchPokemon(); fetchdat(); fetchmuv()"></button><br>
         <input class="typ" type="text"id="typ" name="type" readonly value="">
         <input class="typ2" type="text" id="typ2" name="type2" readonly value="">
         <input class="nme1" type="text" id="nme" name="nme" readonly value="">
-        <!--<div>
+        <img class="fon" src="./img/pokedeex3.png" alt="m">
+        <div class="est">
             <h3>Estadisticas Base</h3>
-            <p id="datos"></p>
-        </div>-->
+            <p class="sts" id="estadisticas"></p>
+        </div>  
+        <img class="fon2" src="./img/pokedeex2.png" alt="m">      
+        <div class="mov">            
+            <h3>Posibles movimientos</h3>
+            <p class="muv" id="movimientos"></p>
+        </div>
     </section>
 </body>
 <footer>
