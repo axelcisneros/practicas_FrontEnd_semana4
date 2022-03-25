@@ -103,14 +103,57 @@ input{
 .bus{
     background-attachment: fixed;
 }
-/*div{
-    width: 150px;
-    height: 150px;
+div.est{
+    width: 135px;
+    height: 120px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-330%, -50%);
+    transform: translate(-344%, -60%);    
     background-color: rgb(77, 185, 95);
+    border-radius: 3%;
+    box-shadow: inset 0 0 30px rgb(77, 185, 95), inset 0 0 30px rgb(253, 253, 253), inset 0 0 30px rgb(77, 185, 95), inset 0 0 30px rgb(253, 253, 253), inset 0 0 30px rgb(77, 185, 95);
     text-align: center;
     color: black;
-}*/
+    overflow-y: scroll;
+    overflow-x:auto;
+}
+p.sts{
+    text-align: center;
+    font-weight: bolder;
+}
+p.muv{
+    text-align: center;
+    font-weight: bolder;    ;
+}
+div.mov{
+    width: 135px;
+    height: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(245%, 8%);
+    background-color: rgb(77, 185, 95);
+    border-radius: 3%;
+    box-shadow: inset 0 0 30px rgb(77, 185, 95), inset 0 0 30px rgb(253, 253, 253), inset 0 0 30px rgb(77, 185, 95), inset 0 0 30px rgb(253, 253, 253), inset 0 0 30px rgb(77, 185, 95);
+    text-align: center;
+    color: rgb(31, 17, 224);
+    overflow-y: scroll;
+    overflow-x:auto;
+}
+.fon{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-199%, -50%);
+}
+.fon2{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(99%, -30%);
+}
