@@ -64,7 +64,7 @@ const pokena = (poken) => {
     pokenme.value = poken;
 }
 
-/*const fetchtab = () => {
+const fetchdat = () => {
     const pokeNameInput = document.getElementById("pokeName");
     let pokeName = pokeNameInput.value;
     pokeName = pokeName.toLowerCase();
@@ -72,11 +72,6 @@ const pokena = (poken) => {
     fetch(url).then((res) => {
         if (res.status != "200") {
             console.log(res);
-            pokeImage("./img/sad.png")
-            pokeImage2("./img/sad.gif")
-            tipo("undefined")
-            tipo2("undefined")
-            pokena("undefined")
         }
         else {
             return res.json();
@@ -84,6 +79,46 @@ const pokena = (poken) => {
     }).then((data) => {
         if (data) {
             console.log(data.stats);
+            let elementos = [
+               `${data.stats[0].stat.name.toUpperCase()}:${data.stats[0].base_stat},
+                ${data.stats[1].stat.name.toUpperCase()}:${data.stats[1].base_stat},
+                ${data.stats[3].stat.name.toUpperCase()}:${data.stats[3].base_stat},
+                ${data.stats[4].stat.name.toUpperCase()}:${data.stats[4].base_stat},
+                ${data.stats[5].stat.name.toUpperCase()}:${data.stats[5].base_stat}.`
+            ];            
+            document.getElementById("estadisticas").innerHTML = elementos;
+        }else{
+            const datos = "UNDEFINED";
+            document.getElementById("estadisticas").innerHTML = datos;
         }
     });
-}*/
+}
+const fetchmuv = () => {
+    const pokeNameInput = document.getElementById("pokeName");
+    let pokeName = pokeNameInput.value;
+    pokeName = pokeName.toLowerCase();
+    const url = `https://pokeapi.co/api/v2/pokemon/${pokeName}`;
+    fetch(url).then((res) => {
+        if (res.status != "200") {
+            console.log(res);
+        }
+        else {
+            return res.json();
+        }
+    }).then((data) => {
+        if (data) {
+            console.log(data.moves);
+            let possision = 0;
+            let dat = [""]
+            do{
+               for(possision; possision < data.moves.length; possision++){
+                   dat += `${data.moves[possision].move.name.toUpperCase()}, `;                   
+                }
+            } while(possision < data.moves.length);
+            document.getElementById("movimientos").innerHTML = dat;                                 
+        }else{
+            const movimiento = "UNDEFINED";
+            document.getElementById("movimientos").innerHTML = movimiento;
+        }
+    });
+}
