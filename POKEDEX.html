@@ -15,6 +15,7 @@
     </header><hr>
     <section>
         <h2>Vamos a buscar al Pokemon</h2>
+        <a href="./instructivo.html"><input class="ins" type="button" value="Instructivo"></a>
         <input class="bus" type="text" placeholder="pikachu" id="pokeName" name="pokeName"><br>
         <img class="pokemon" src="./img/pokeball.png" alt="Pokemon" id="pokeImg" width="100px">
         <img class="shiny" src="./img/pokeball.png" alt="Pokemon2" id="pokeImg2" width="100px"> 
@@ -34,11 +35,33 @@
             <p class="muv" id="movimientos"></p>
         </div>
     </section><hr>
-    <footer>
-        <h3>Pokedex creada</h3>
-        <p>By Axel Hiram Cisnderos Fabila</p>
-        <a href="https://github.com/axelcisneros"><img class="logo" src="./img/gitlogo.png" alt="github"></a>
-    </footer>
+    <div id="poke" class="typ">
+        <table>
+            <tr>
+                <th><button onclick="fetchtyp0()" class="tip"><img class="jpg" src="./img/fuego.png" alt="fire" width="150px"></button></th>
+                <th><button onclick="fetchtyp1()" class="tip"><img class="jpg" src="./img/agua.png" alt="water" width="150px"></button></th>
+                <th><button onclick="fetchtyp2()" class="tip"><img class="jpg" src="./img/planta.png" alt="grass" width="150px"></button></th>
+                <th><button onclick="fetchtyp3()" class="tip"><img class="jpg" src="./img/electrico.png" alt="electric" width="150px"></button></th>
+                <th><button onclick="fetchtyp4()" class="tip"><img class="jpg" src="./img/bicho.png" alt="bug" width="150px"></button></th>
+                <th><button onclick="fetchtyp5()" class="tip"><img class="jpg" src="./img/volador.png" alt="flying" width="150px"></button></th>
+                <th><button onclick="fetchtyp6()" class="tip"><img class="jpg" src="./img/tierra.png" alt="ground" width="150px"></button></th>
+                <th><button onclick="fetchtyp7()" class="tip"><img class="jpg" src="./img/fantasma.png" alt="ghost" width="150px"></button></th>
+                <th><button onclick="fetchtyp8()" class="tip"><img class="jpg" src="./img/lucha.png" alt="fighting" width="150px"></button></th>
+            </tr>
+            <tr>
+                <td><button onclick="fetchtyp9()" class="tip"><img class="jpg" src="./img/acero.png" alt="steel" width="150px"></button></td>
+                <td><button onclick="fetchtyp10()" class="tip"><img class="jpg" src="./img/roca.png" alt="rock" width="150px"></button></td>
+                <td><button onclick="fetchtyp11()" class="tip"><img class="jpg" src="./img/psiquico.png" alt="psychic" width="150px"></button></td>
+                <td><button onclick="fetchtyp12()" class="tip"><img class="jpg" src="./img/veneno.png" alt="poison" width="150px"></button></td>
+                <td><button onclick="fetchtyp13()" class="tip"><img class="jpg" src="./img/normal.png" alt="normal" width="150px"></button></td>
+                <td><button onclick="fetchtyp14()" class="tip"><img class="jpg" src="./img/hielo.png" alt="ice" width="150px"></button></td>
+                <td><button onclick="fetchtyp15()" class="tip"><img class="jpg" src="./img/hada.png" alt="fairy" width="150px"></button></td>
+                <td><button onclick="fetchtyp16()" class="tip"><img class="jpg" src="./img/dragon.png" alt="dragon" width="150px"></button></td>
+                <td><button onclick="fetchtyp17()" class="tip"><img class="jpg" src="./img/siniestro.png" alt="dark" width="150px"></button></td>
+            </tr>
+        </table>
+    </div><hr>
+    <button onclick="actualizar()" class="f5">ACTUALIZAR PAGINA</button>
 </body>
 <footer>
     <script src="./POKEDEX.js"></script>

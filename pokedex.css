@@ -14,7 +14,6 @@ header{
 }
 body{
     color: #3cd2f8;
-    margin: 0%;
     text-align: center;
     background-image: url(./img/pokeball.jpg);
     background-repeat: repeat;
@@ -139,7 +138,7 @@ div.mov{
     text-align: center;
     color: rgb(31, 17, 224);
     overflow-y: scroll;
-    overflow-x:auto;
+    overflow-x: auto;
 }
 .fon{
     width: 250px;
@@ -161,13 +160,55 @@ div.mov{
     width: 15px;
     height: 15px;
 }
-footer{
+div.typ{
     width: 100%;
-    height: 30px;
-    color: rgb(25, 0, 255);    
-    justify-content: center;
-    font-style: italic;
-    font-size: xx-small;
-    font-weight: bold;
-    background-color: blanchedalmond
+    height: auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: inline-flex;
+    flex-wrap: wrap;
+    color: whitesmoke;    
+    background-color: black;
+}
+table{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+img.jpg{
+    width: 110px;
+    height: 50px;
+}
+button.tip{
+    border: none;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    cursor: pointer;
+}
+button.f5{
+    color: red;
+    background-color: blue;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    cursor: pointer;
+}
+input.ins{
+    color: red;
+    background-color: blue;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    cursor: pointer;
+}
+img.ins2{
+    width: 1500px;
+    height: 750px;
 }

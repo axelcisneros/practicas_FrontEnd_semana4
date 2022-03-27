@@ -1,3 +1,6 @@
+const actualizar = () => {
+    location.reload();
+}
 const fetchPokemon = () => {
     const pokeNameInput = document.getElementById("pokeName");
     let pokeName = pokeNameInput.value;
@@ -18,7 +21,7 @@ const fetchPokemon = () => {
     }).then((data) => {
         if (data) {
             console.log(data);
-            let poken = pokeName;
+            let poken = data.name;
             pokena(poken);
             console.log(poken);            
             let pokeImg = data.sprites.front_default;
@@ -119,6 +122,458 @@ const fetchmuv = () => {
         }else{
             const movimiento = "UNDEFINED";
             document.getElementById("movimientos").innerHTML = movimiento;
+        }
+    });
+}
+
+
+const fetchtyp0 = () => {
+    const poketype = "fire";
+    const url = `https://pokeapi.co/api/v2/type/${poketype}`;
+    fetch(url).then((res) => {
+        if (res.status != "200") {
+            console.log(res);
+        }
+        else {
+            return res.json();
+        }
+    }).then((data) => {
+        if (data) {
+            console.log(data);
+            console.log(data.pokemon);
+            let poke = [""];
+            for (let i = 0; i < data.pokemon.length; i++) {
+                poke[i] = data.pokemon[i].pokemon.name;
+                poke[i] = poke[i].charAt(0).toUpperCase() + poke[i].slice(1);
+                poke[i] = poke[i].replace("", " ");
+            }
+            console.log(poke);
+            document.getElementById("poke").innerHTML = poke;
+        }
+    });
+}
+const fetchtyp1 = () => {
+    const poketype = "water";
+    const url = `https://pokeapi.co/api/v2/type/${poketype}`;
+    fetch(url).then((res) => {
+        if (res.status != "200") {
+            console.log(res);
+        }
+        else {
+            return res.json();
+        }
+    }).then((data) => {
+        if (data) {
+            console.log(data);
+            console.log(data.pokemon);
+            let poke = [""];
+            for (let i = 0; i < data.pokemon.length; i++) {
+                poke[i] = data.pokemon[i].pokemon.name;
+                poke[i] = poke[i].charAt(0).toUpperCase() + poke[i].slice(1);
+                poke[i] = poke[i].replace("", " ");
+            }
+            console.log(poke);
+            document.getElementById("poke").innerHTML = poke;
+        }
+    });
+}
+const fetchtyp2 = () => {
+    const poketype = "grass";
+    const url = `https://pokeapi.co/api/v2/type/${poketype}`;
+    fetch(url).then((res) => {
+        if (res.status != "200") {
+            console.log(res);
+        }
+        else {
+            return res.json();
+        }
+    }).then((data) => {
+        if (data) {
+            console.log(data);
+            console.log(data.pokemon);
+            let poke = [""];
+            for (let i = 0; i < data.pokemon.length; i++) {
+                poke[i] = data.pokemon[i].pokemon.name;
+                poke[i] = poke[i].charAt(0).toUpperCase() + poke[i].slice(1);
+                poke[i] = poke[i].replace("", " ");
+            }
+            console.log(poke);
+            document.getElementById("poke").innerHTML = poke;
+        }
+    });
+}
+const fetchtyp3 = () => {
+    const poketype = "electric";
+    const url = `https://pokeapi.co/api/v2/type/${poketype}`;
+    fetch(url).then((res) => {
+        if (res.status != "200") {
+            console.log(res);
+        }
+        else {
+            return res.json();
+        }
+    }).then((data) => {
+        if (data) {
+            console.log(data);
+            console.log(data.pokemon);
+            let poke = [""];
+            for (let i = 0; i < data.pokemon.length; i++) {
+                poke[i] = data.pokemon[i].pokemon.name;
+                poke[i] = poke[i].charAt(0).toUpperCase() + poke[i].slice(1);
+                poke[i] = poke[i].replace("", " ");
+            }
+            console.log(poke);
+            document.getElementById("poke").innerHTML = poke;
+        }
+    });
+}
+const fetchtyp4 = () => {
+    const poketype = "bug";
+    const url = `https://pokeapi.co/api/v2/type/${poketype}`;
+    fetch(url).then((res) => {
+        if (res.status != "200") {
+            console.log(res);
+        }
+        else {
+            return res.json();
+        }
+    }).then((data) => {
+        if (data) {
+            console.log(data);
+            console.log(data.pokemon);
+            let poke = [""];
+            for (let i = 0; i < data.pokemon.length; i++) {
+                poke[i] = data.pokemon[i].pokemon.name;
+                poke[i] = poke[i].charAt(0).toUpperCase() + poke[i].slice(1);
+                poke[i] = poke[i].replace("", " ");
+            }
+            console.log(poke);
+            document.getElementById("poke").innerHTML = poke;
+        }
+    });
+}
+const fetchtyp5 = () => {
+    const poketype = "flying";
+    const url = `https://pokeapi.co/api/v2/type/${poketype}`;
+    fetch(url).then((res) => {
+        if (res.status != "200") {
+            console.log(res);
+        }
+        else {
+            return res.json();
+        }
+    }).then((data) => {
+        if (data) {
+            console.log(data);
+            console.log(data.pokemon);
+            let poke = [""];
+            for (let i = 0; i < data.pokemon.length; i++) {
+                poke[i] = data.pokemon[i].pokemon.name;
+                poke[i] = poke[i].charAt(0).toUpperCase() + poke[i].slice(1);
+                poke[i] = poke[i].replace("", " ");
+            }
+            console.log(poke);
+            document.getElementById("poke").innerHTML = poke;
+        }
+    });
+}
+const fetchtyp6 = () => {
+    const poketype = "ground";
+    const url = `https://pokeapi.co/api/v2/type/${poketype}`;
+    fetch(url).then((res) => {
+        if (res.status != "200") {
+            console.log(res);
+        }
+        else {
+            return res.json();
+        }
+    }).then((data) => {
+        if (data) {
+            console.log(data);
+            console.log(data.pokemon);
+            let poke = [""];
+            for (let i = 0; i < data.pokemon.length; i++) {
+                poke[i] = data.pokemon[i].pokemon.name;
+                poke[i] = poke[i].charAt(0).toUpperCase() + poke[i].slice(1);
+                poke[i] = poke[i].replace("", " ");
+            }
+            console.log(poke);
+            document.getElementById("poke").innerHTML = poke;
+        }
+    });
+}
+const fetchtyp7 = () => {
+    const poketype = "ghost";
+    const url = `https://pokeapi.co/api/v2/type/${poketype}`;
+    fetch(url).then((res) => {
+        if (res.status != "200") {
+            console.log(res);
+        }
+        else {
+            return res.json();
+        }
+    }).then((data) => {
+        if (data) {
+            console.log(data);
+            console.log(data.pokemon);
+            let poke = [""];
+            for (let i = 0; i < data.pokemon.length; i++) {
+                poke[i] = data.pokemon[i].pokemon.name;
+                poke[i] = poke[i].charAt(0).toUpperCase() + poke[i].slice(1);
+                poke[i] = poke[i].replace("", " ");
+            }
+            console.log(poke);
+            document.getElementById("poke").innerHTML = poke;
+        }
+    });
+}
+const fetchtyp8 = () => {
+    const poketype = "fighting";
+    const url = `https://pokeapi.co/api/v2/type/${poketype}`;
+    fetch(url).then((res) => {
+        if (res.status != "200") {
+            console.log(res);
+        }
+        else {
+            return res.json();
+        }
+    }).then((data) => {
+        if (data) {
+            console.log(data);
+            console.log(data.pokemon);
+            let poke = [""];
+            for (let i = 0; i < data.pokemon.length; i++) {
+                poke[i] = data.pokemon[i].pokemon.name;
+                poke[i] = poke[i].charAt(0).toUpperCase() + poke[i].slice(1);
+                poke[i] = poke[i].replace("", " ");
+            }
+            console.log(poke);
+            document.getElementById("poke").innerHTML = poke;
+        }
+    });
+}
+const fetchtyp9 = () => {
+    const poketype = "steel";
+    const url = `https://pokeapi.co/api/v2/type/${poketype}`;
+    fetch(url).then((res) => {
+        if (res.status != "200") {
+            console.log(res);
+        }
+        else {
+            return res.json();
+        }
+    }).then((data) => {
+        if (data) {
+            console.log(data);
+            console.log(data.pokemon);
+            let poke = [""];
+            for (let i = 0; i < data.pokemon.length; i++) {
+                poke[i] = data.pokemon[i].pokemon.name;
+                poke[i] = poke[i].charAt(0).toUpperCase() + poke[i].slice(1);
+                poke[i] = poke[i].replace("", " ");
+            }
+            console.log(poke);
+            document.getElementById("poke").innerHTML = poke;
+        }
+    });
+}
+const fetchtyp10 = () => {
+    const poketype = "rock";
+    const url = `https://pokeapi.co/api/v2/type/${poketype}`;
+    fetch(url).then((res) => {
+        if (res.status != "200") {
+            console.log(res);
+        }
+        else {
+            return res.json();
+        }
+    }).then((data) => {
+        if (data) {
+            console.log(data);
+            console.log(data.pokemon);
+            let poke = [""];
+            for (let i = 0; i < data.pokemon.length; i++) {
+                poke[i] = data.pokemon[i].pokemon.name;
+                poke[i] = poke[i].charAt(0).toUpperCase() + poke[i].slice(1);
+                poke[i] = poke[i].replace("", " ");
+            }
+            console.log(poke);
+            document.getElementById("poke").innerHTML = poke;
+        }
+    });
+}
+const fetchtyp11 = () => {
+    const poketype = "psychic";
+    const url = `https://pokeapi.co/api/v2/type/${poketype}`;
+    fetch(url).then((res) => {
+        if (res.status != "200") {
+            console.log(res);
+        }
+        else {
+            return res.json();
+        }
+    }).then((data) => {
+        if (data) {
+            console.log(data);
+            console.log(data.pokemon);
+            let poke = [""];
+            for (let i = 0; i < data.pokemon.length; i++) {
+                poke[i] = data.pokemon[i].pokemon.name;
+                poke[i] = poke[i].charAt(0).toUpperCase() + poke[i].slice(1);
+                poke[i] = poke[i].replace("", " ");
+            }
+            console.log(poke);
+            document.getElementById("poke").innerHTML = poke;
+        }
+    });
+}
+const fetchtyp12 = () => {
+    const poketype = "poison";
+    const url = `https://pokeapi.co/api/v2/type/${poketype}`;
+    fetch(url).then((res) => {
+        if (res.status != "200") {
+            console.log(res);
+        }
+        else {
+            return res.json();
+        }
+    }).then((data) => {
+        if (data) {
+            console.log(data);
+            console.log(data.pokemon);
+            let poke = [""];
+            for (let i = 0; i < data.pokemon.length; i++) {
+                poke[i] = data.pokemon[i].pokemon.name;
+                poke[i] = poke[i].charAt(0).toUpperCase() + poke[i].slice(1);
+                poke[i] = poke[i].replace("", " ");
+            }
+            console.log(poke);
+            document.getElementById("poke").innerHTML = poke;
+        }
+    });
+}
+const fetchtyp13 = () => {
+    const poketype = "normal";
+    const url = `https://pokeapi.co/api/v2/type/${poketype}`;
+    fetch(url).then((res) => {
+        if (res.status != "200") {
+            console.log(res);
+        }
+        else {
+            return res.json();
+        }
+    }).then((data) => {
+        if (data) {
+            console.log(data);
+            console.log(data.pokemon);
+            let poke = [""];
+            for (let i = 0; i < data.pokemon.length; i++) {
+                poke[i] = data.pokemon[i].pokemon.name;
+                poke[i] = poke[i].charAt(0).toUpperCase() + poke[i].slice(1);
+                poke[i] = poke[i].replace("", " ");
+            }
+            console.log(poke);
+            document.getElementById("poke").innerHTML = poke;
+        }
+    });
+}
+const fetchtyp14 = () => {
+    const poketype = "ice";
+    const url = `https://pokeapi.co/api/v2/type/${poketype}`;
+    fetch(url).then((res) => {
+        if (res.status != "200") {
+            console.log(res);
+        }
+        else {
+            return res.json();
+        }
+    }).then((data) => {
+        if (data) {
+            console.log(data);
+            console.log(data.pokemon);
+            let poke = [""];
+            for (let i = 0; i < data.pokemon.length; i++) {
+                poke[i] = data.pokemon[i].pokemon.name;
+                poke[i] = poke[i].charAt(0).toUpperCase() + poke[i].slice(1);
+                poke[i] = poke[i].replace("", " ");
+            }
+            console.log(poke);
+            document.getElementById("poke").innerHTML = poke;
+        }
+    });
+}
+const fetchtyp15 = () => {
+    const poketype = "fairy";
+    const url = `https://pokeapi.co/api/v2/type/${poketype}`;
+    fetch(url).then((res) => {
+        if (res.status != "200") {
+            console.log(res);
+        }
+        else {
+            return res.json();
+        }
+    }).then((data) => {
+        if (data) {
+            console.log(data);
+            console.log(data.pokemon);
+            let poke = [""];
+            for (let i = 0; i < data.pokemon.length; i++) {
+                poke[i] = data.pokemon[i].pokemon.name;
+                poke[i] = poke[i].charAt(0).toUpperCase() + poke[i].slice(1);
+                poke[i] = poke[i].replace("", " ");
+            }
+            console.log(poke);
+            document.getElementById("poke").innerHTML = poke;
+        }
+    });
+}
+const fetchtyp16 = () => {
+    const poketype = "dragon";
+    const url = `https://pokeapi.co/api/v2/type/${poketype}`;
+    fetch(url).then((res) => {
+        if (res.status != "200") {
+            console.log(res);
+        }
+        else {
+            return res.json();
+        }
+    }).then((data) => {
+        if (data) {
+            console.log(data);
+            console.log(data.pokemon);
+            let poke = [""];
+            for (let i = 0; i < data.pokemon.length; i++) {
+                poke[i] = data.pokemon[i].pokemon.name;
+                poke[i] = poke[i].charAt(0).toUpperCase() + poke[i].slice(1);
+                poke[i] = poke[i].replace("", " ");
+            }
+            console.log(poke);
+            document.getElementById("poke").innerHTML = poke;
+        }
+    });
+}
+const fetchtyp17 = () => {
+    const poketype = "dark";
+    const url = `https://pokeapi.co/api/v2/type/${poketype}`;
+    fetch(url).then((res) => {
+        if (res.status != "200") {
+            console.log(res);
+        }
+        else {
+            return res.json();
+        }
+    }).then((data) => {
+        if (data) {
+            console.log(data);
+            console.log(data.pokemon);
+            let poke = [""];
+            for (let i = 0; i < data.pokemon.length; i++) {
+                poke[i] = data.pokemon[i].pokemon.name;
+                poke[i] = poke[i].charAt(0).toUpperCase() + poke[i].slice(1);
+                poke[i] = poke[i].replace("", " ");
+            }
+            console.log(poke);
+            document.getElementById("poke").innerHTML = poke;
         }
     });
 }
