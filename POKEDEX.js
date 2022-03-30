@@ -1,6 +1,12 @@
 const actualizar = () => {
     location.reload();
 }
+const textbox = document.getElementById("pokeName");
+textbox.addEventListener("keypress", function onEvent(event) {
+    if (event.key === "Enter") {
+        document.getElementById("ent").click();
+    }
+});
 const fetchPokemon = () => {
     const pokeNameInput = document.getElementById("pokeName");
     let pokeName = pokeNameInput.value;

@@ -16,11 +16,11 @@
     <section>
         <h2>Vamos a buscar al Pokemon</h2>
         <a href="./instructivo.html"><input class="ins" type="button" value="Instructivo"></a>
-        <input class="bus" type="text" placeholder="pikachu" id="pokeName" name="pokeName"><br>
+        <input class="bus" type="text" id="pokeName" name="pokeName"><br>
         <img class="pokemon" src="./img/pokeball.png" alt="Pokemon" id="pokeImg" width="100px">
         <img class="shiny" src="./img/pokeball.png" alt="Pokemon2" id="pokeImg2" width="100px"> 
         <img class="poke" src="./img/pokedeex1.png" alt="pokedeex" width="180px"><br>
-        <button class="bot" onclick="fetchPokemon(); fetchdat(); fetchmuv()"></button><br>
+        <button class="bot" id="ent" onclick="fetchPokemon(); fetchdat(); fetchmuv()"></button><br>
         <input class="typ" type="text"id="typ" name="type" readonly value="">
         <input class="typ2" type="text" id="typ2" name="type2" readonly value="">
         <input class="nme1" type="text" id="nme" name="nme" readonly value="">
